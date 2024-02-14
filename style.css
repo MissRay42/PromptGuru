@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px; /* This margin is fine, it pushes the label down from elements above it. */
+    margin-bottom: 2px; /* Reduced this from 15px to bring it closer to the input/select box. */
+    box-sizing: border-box;
+}
+
+select, input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px; /* You can also adjust this if necessary. */
+    margin-bottom: 20px; /* Or adjust this if you want less space after the select/input. */
+    box-sizing: border-box;
+}
+button {
+    background-color: #FFA500; /* Green background */
+    color: white; /* White text */
+    padding: 14px 20px; /* Top and bottom padding of 14px, left and right padding of 20px */
+    margin: 8px 0; /* Margin of 8px on top and bottom */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Mouse cursor changes to pointer when hovering over the button */
+    font-size: 16px; /* Text size */
+}

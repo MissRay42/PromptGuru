@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Art Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Art Creation Prompt</h1>
+        <form id="artForm">
+            <label for="artFormSelection">Select Art Form:</label>
+            <select id="artFormSelection" name="artFormSelection">
+                <option value="">Please Select</option>
+                <option value="photograph">Photograph</option>
+                <option value="illustration">Illustration</option>
+                <option value="oilPainting">Oil Painting</option>
+                <option value="pastelpainting">Pastel Painting</option>
+                <option value="acrylicPainting">Acrylic Painting</option>
+                <option value="waterColorPainting">Watercolor Painting</option>
+                <option value="artwork">Artwork</option>                
+                <option value="3d">3D Image</option>
+                <option value="cartoonImage">Cartoon Image</option>
+                <option value="lowpoly">Low Poly</option>
+                <option value="isometric">Isometric Image</option>
+                <option value="etching">Etching</option>
+                <option value="digitalArt">Digital Art</option>
+                <option value="pixelArt">Pixel Art</option>
+                <option value="pixelArt">Pixel Art</option>
+                <!-- Add other art forms as needed -->
+            </select>
+            
+            <label for="mainSubject">Main Subject:</label>
+            <input type="text" id="mainSubject" name="mainSubject" placeholder="Enter main subject">
+            
+            <label for="background">Background:</label>
+            <input type="text" id="background" name="background" placeholder="Describe the background">
+            
+            <label for="emotionSelection">Select Emotion:</label>
+            <select id="emotionSelection" name="emotionSelection">
+                <option value="">Please Select</option>
+                <option value="happy">Happy</option>
+                <option value="comforting">Comforting</option>
+                <option value="vivid">Vivid</option>
+                <option value="energetic">Energetic</option>
+                 <option value="romantic">Romantic</option>
+                <option value="peaceful">Peaceful</option>
+                 <option value="ghostly">Ghostly</option>
+                <option value="moody">Moody</option>
+                 <option value="dismal">Dismal</option>
+                <option value="apocalyptic">Apocalyptic</option>
+                 <option value="depressing">Depressing</option>
+                <!-- Add more emotions as needed -->
+            </select>
+            
+              <label for="colorScheme">Select Color Scheme:</label>
+            <select id="colorScheme" name="colorscheme">
+                <option value="">Please Select</option>
+                <option value="B&W">Black & White</option>
+                <option value="vibrant">Vibrant Color</option>
+                <option value="dopamine">Dopamine Color</option>
+                <option value="morandi">Morandi Color</option>
+                 <option value="macaron">Macaron Color</option>
+                <option value="memphis">Memphis Color</option>
+                 <option value="mallard">Mallard Color</option>
+                  <option value="tranquil">Tranquil Color</option>
+            </select>
+            
+             <label for="artStyle">Select Art Style:</label>
+            <select id="artStyle" name="artStyle">
+                <option value="">Please Select</option>
+                <option value="steamPunk">Steampunk</option>
+                <option value="dieselPunk">Dieselpunk</option>
+                <option value="CyberPunk">Cyberpunk</option>
+                <option value="Gothic">Gothic Fantasy</option>
+                 <option value="PostApocalyptic">Post-apocalyptic</option>
+                <option value="Minimalist">Minimalist</option>
+                 <option value="Abstract">Abstract</option>
+            </select>
+            
+            <label for="ar">Select Aspect Ratio:</label>
+            <select id="ar" name="ar">
+                <option value="">Please Select</option>
+                <option value="169)">--ar 16:9</option>
+                <option value="43">--ar 4:3</option>
+                <option value="155">--ar 15:5</option>
+                <option value="916">--ar 9:16</option>
+                 <option value="34">--ar 3:4</option>
+            </select>
+            
+             <label for="quality">Select Quality:</label>
+            <select id="quality" name="quality">
+                <option value="">Please Select</option>
+                <option value="q2">--q 2</option>
+            </select>
+            
+             <label for="seed">Select Seed Value:</label>
+            <select id="seed" name="seed">
+                <option value="">Please Select</option>
+        		<option value="seed256">--seed 256</option>
+                <option value="seed2556">--seed 2556</option>
+            </select>
+            
+            <div id="dynamicFields"></div>
+            
+            
+            
+            <button type="button" id="createButton">Create Prompt</button>
+        </form>
+        <p id="promptOutput"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
